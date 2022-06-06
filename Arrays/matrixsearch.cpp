@@ -8,8 +8,8 @@ bool findTargetInMatrix(vector < vector < int >> & mat, int m, int n, int target
             if(mat[i][j]==target)
                 return true;
         }
-    }
-     return false;
+    }                                      
+     return false;              
 }
 */
 
@@ -20,7 +20,7 @@ bool findTargetInMatrix(vector < vector < int >> & mat, int m, int n, int target
     int high=(m*n)-1;
     while(low<=high){
         int mid = (low + (high - low) / 2);
-        if(mat[mid/n][mid%n]==target)
+        if(mat[mid/n][mid%n]==target)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
             return true;
         if(mat[mid/n][mid%n]<target)
             low=mid+1;
