@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 bool ispossible(vector<vector<int>> &mat,vector<int>&color
 
 ,int node,int col,int n){
