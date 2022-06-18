@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 int ninjaAndLadoos(vector<int> &row1, vector<int> &row2, int m, int n, int k) {
     // Write your code here.
     if(m>n) return ninjaAndLadoos(row2,row1,n,m,k);
