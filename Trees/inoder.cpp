@@ -26,3 +26,29 @@ vector<int> getInOrderTraversal(TreeNode *root)
     inorder(ans, root);
     return ans;
 }
+//iterative
+/*
+
+vector<int> getInOrderTraversal(TreeNode *root)
+{
+    vector<int>inOrder;
+    stack<TreeNode *> st;
+    TreeNode * node= root;
+    while(true){
+        if(node != NULL)
+        {
+            st.push(node);
+            node = node->left;
+        }
+        else{
+            if(st.empty()==true)
+                break;
+            node=st.top();
+            st.pop();
+            inOrder.push_back(node->data);
+            node=node->right;
+        }
+    }
+    return inOrder;
+}
+*/
