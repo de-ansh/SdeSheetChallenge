@@ -21,7 +21,6 @@ vector<int> bottomView(BinaryTreeNode<int> * root){
             }
             
         }
-        
         for(auto it : mpp) {
             ans.push_back(it.second); 
         }
