@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+
+//height from inorder and levelorder
 int heightOfTheTree(vector<int>& inorder, vector<int>& levelorder, int N){
     queue<vector<int>> q;
    unordered_map<int,int> umap;
