@@ -1,4 +1,5 @@
-
+//Number of nodes present between two nodes at any level
+//level order traversal
 int getMaxWidth(TreeNode<int> *root)
 {
     if(root == NULL) return 0;
