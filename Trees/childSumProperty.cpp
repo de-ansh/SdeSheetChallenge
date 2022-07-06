@@ -17,6 +17,9 @@
     };
 
 *************************************************************/
+
+
+//always check tree down to upwards so we never shoter values as root
 void changeTree(BinaryTreeNode < int > * root) {
     // Write your code here.
     if(root==NULL)
