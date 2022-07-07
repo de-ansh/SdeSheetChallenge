@@ -22,3 +22,28 @@ void printLeftView(BinaryTreeNode<int> *root)
        cout<<ans[i]<<" ";
    //Write your code here
 }
+
+
+//rightView
+vector<int> rightView(Node* root) {
+    queue<Node*> treeNodes;
+    vector<int> treeRightView;
+    treeNodes.push(root);
+    while (!treeNodes.empty()) {
+        int n = treeNodes.size();
+        for (int i = 0; i < n; i++) {
+            Node* currentNode = treeNodes.front();
+            treeNodes.pop();
+            if (i == 0) {
+                treeRightView.push_back(currentNode->data);
+            }
+            if (currentNode->right != NULL) {
+                treeNodes.push(currentNode->right);
+            }
+            if (currentNode->left != NULL) {
+                treeNodes.push(currentNode->left);
+            }
+        }
+    }
+    return treeRightView;
+}
