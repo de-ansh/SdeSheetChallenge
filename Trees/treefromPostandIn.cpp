@@ -19,6 +19,9 @@
    
    
  ************************************************************/
+//Idea is same as inorder and pre
+//just a slight change
+
 #include<bits/stdc++.h>
 TreeNode<int>* buildTreePostIn(vector<int> &inorder, int is, int ie, vector<int> &postorder, int ps, int pe, 
                                      map<int,int> &hm){
