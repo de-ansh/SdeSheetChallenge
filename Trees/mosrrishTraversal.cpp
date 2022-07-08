@@ -14,9 +14,14 @@ vector<int> getinotdrt(TreeNode * root ){
 			if(prev->right==NULL){
 				prev->right=curr;
 				cur=cur->left;
+			}else{
+				prev->right=NULL;
+				inorder.push_back(cur->val);
+				cur=cur->right;
 			}
 
 		}
 
 	}
+	return inorder;
 }
