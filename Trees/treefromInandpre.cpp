@@ -27,6 +27,7 @@ TreeNode<int>* makeBT(vector<int>& inorder, vector<int>& preorder,int li,int hi,
     return root;
     
 }
+
 TreeNode<int> *buildBinaryTree(vector<int> &inorder, vector<int> &preorder)
 {
 	int n=inorder.size();
