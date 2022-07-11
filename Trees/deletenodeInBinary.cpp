@@ -31,6 +31,9 @@
 /*
 3) Node to be deleted has two children: Find inorder successor of the node. Copy contents of the inorder
  successor to the node and delete the inorder successor. Note that inorder predecessor can also be used. 
+ The important thing to note is, inorder successor is needed only when the right child is not empty. 
+ In this particular case, 
+ inorder successor can be obtained by finding the minimum value in the right child of the node.
 */
 BinaryTreeNode<int>* findLastRight(BinaryTreeNode<int>* root) {
         if (root->right == NULL) {
