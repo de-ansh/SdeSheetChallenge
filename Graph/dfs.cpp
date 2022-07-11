@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 void dfs(vector<int> adj[], int node, vector<int>&cmp, vector<int>&vis){
 
     cmp.push_back(node);
