@@ -1,5 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+//We will carry a upper bound (node to INT_MAX)
+//in the tree there might be a left or not
+
+//TC: O()
 TreeNode<int>* formBST(vector<int> &pre, int &idx, int bound){
     if(idx == pre.size() || pre[idx] > bound) return NULL;
     TreeNode<int> *root = new TreeNode<int>(pre[idx++]);
