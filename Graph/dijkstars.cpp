@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 vector<int> dijkstra(vector<vector<int>> &vec, int vertices, int edges, int source) {
     // Write your code here.
     unordered_map<int,list< pair<int,int> > > adj;
