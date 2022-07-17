@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 vector<int> countDistinctElements(vector<int> &arr, int k) 
 {
     vector<int>ans;
@@ -15,6 +16,6 @@ vector<int> countDistinctElements(vector<int> &arr, int k)
         ans.push_back(mpp.size());
     }
     return ans;
-    // Write your code here
+    
 	
 }
