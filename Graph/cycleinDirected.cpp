@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool detect_cycle(int src, vector<int> adj[], vector<int> &visit){
     visit[src] = 2;
     for(auto it: adj[src]){
